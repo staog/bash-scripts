@@ -1,4 +1,4 @@
-I've made this script to help me start fast when I'm going to do some web development on my Linux machine.
+I've made this script to help me start fast when I want to do some web development on my Linux machine.
 
 It has 3 options:
 1. To print current working directory
