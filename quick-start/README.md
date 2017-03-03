@@ -5,9 +5,9 @@ Then just double-click on a file and choose to run it in terminal.
 
 You will have 3 options:
 
-1. Prints current working directory
-2. Lists all the files and directories in your current directory
-3. Creates brand new directory for your project
+1. Print current working directory
+2. List all the files and directories in your current directory
+3. Create brand new directory for your project
 
 If you choose third option, you just need to pick a name for a new directory (where your new project will be placed), and this
 script is going to make that directory together with index.html (which includes base web page structure), main.css and main.js files (both empty).
