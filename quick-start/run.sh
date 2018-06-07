@@ -45,10 +45,10 @@ Enter './run.sh' to run the program again or 'exit' to quit."
     echo "
 Welcome!
 This script will make a new directory for your project and it will also
-make index.html (with base structure), main.css and main.js files in your
-newly created directory.
-Once that's done, you will get a list of all files in your new directory
-and everything will be opened in Atom text editor instantly.
+make index.html (with base structure), main.css file (which will include
+CSS Reset made by Eric Meyer) inside of css directory and main.js file
+inside of js directory. Once that's done, you will get a list of all files
+and subdirectories and everything will be opened in Atom text editor instantly.
 
 ***Please note that using 'space' is not alowed!***
 Use dash '-' or underscore '_' if you want to separate words.
@@ -71,15 +71,85 @@ Enter './run.sh' to run the program again or 'exit' to quit."
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>New Project</title>
 </head>
 <body>
-  <script src="main.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>' > index.html
-    > main.css
-    > main.js
+    mkdir css
+    cd css
+    echo '/*
+   =========================================
+   Reset by Eric Meyer
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   =========================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  =========================================
+  Custom styles
+  =========================================
+*/'  > main.css
+    cd ..
+    mkdir js
+    cd js
+    echo 'console.log("Make something amazing! d(-_-)b");
+    ' > main.js
+    cd ..
     ls -l
     atom .
     echo "
@@ -96,3 +166,4 @@ Invalid entry.
 Enter './run.sh' to run the program again or 'exit' to quit."
 fi
 $SHELL
+
