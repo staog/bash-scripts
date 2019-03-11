@@ -6,4 +6,4 @@ echo "Mono and Orca are gone!"
 
 # Install Audacious and VLC
 apt install -y audacious vlc
-echo "Audacious and VLC have been installed." && sleep 10
+echo "Audacious and VLC have been installed." && sleep 5
