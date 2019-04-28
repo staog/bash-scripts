@@ -7,7 +7,7 @@ That's cross-platform, which means it works in many operating systems (including
 That Mono infrastructure could potentially be abused by specially crafted cross-platform malware and viruses.
 Linux Mint contains screen reader Orca (gnome-orca) by default. It can be really helpful when you're visually handicapped. But it is useless when you're not.
 
-# Installing Audacious and VLC
+# Installing NodeJS, npm, Audacious and VLC
 
 Audacious is an open source audio player. A descendant of XMMS, Audacious plays your music how you want it, without stealing away your computer’s resources from other tasks.
 If you ask me, it is by far the best music player in Linux world. It's not bloated, quite simple and yet super great.
