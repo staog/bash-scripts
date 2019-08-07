@@ -1,6 +1,6 @@
 # Removing Mono and Orca
 
-After fresh install of your new OS (in my case: Linux Mint 19.1 - Tessa) it is wise to remove Mono and Orca.
+After fresh install of your new OS (in my case: Linux Mint 19.2 - Tina) it is wise to remove Mono and Orca.
 Mono is present by default in Linux Mint and it will be installed automatically whenever you install an application that needs the Mono infrastructure, like media player Banshee and notes app Tomboy.
 This package is a security risk, because it's an implementation of Microsoft's .NET. 
 That's cross-platform, which means it works in many operating systems (including Windows).
