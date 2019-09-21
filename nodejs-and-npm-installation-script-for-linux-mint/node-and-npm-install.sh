@@ -20,7 +20,7 @@ sudo apt install -y build-essential curl
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
-# After adding the PPA on your machine, install Node.js (npm will also be installed along Node.js)
+# After adding the PPA on your machine, install Node.js (npm will also be installed along Node.js - This is true for Linux Mint 19.2, on Ubuntu 19.10 you need to install npm manually)
 
 sudo apt install -y nodejs
 
